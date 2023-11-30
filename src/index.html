@@ -35,7 +35,7 @@
         
         
     </style>
-</head>
+<!-- </head> -->
 <body>
 <!-- Barra de navegación -->
 <div class="navbar">
@@ -71,15 +71,15 @@
                 <!--Formulario de Login y registro-->
                 <div class="contenedor__login-register">
                     <!--Login-->
-                    <form action="" class="formulario__login">
+                    <form action="" onsubmit="" class="formulario__login">
                         <h2>Iniciar Sesión</h2>
                         <input type="text" placeholder="Correo Electronico">
                         <input type="password" placeholder="Contraseña">
-                        <button>Entrar</button>
+                        <button id="carlitos">Entrar</button>
                     </form>
 
                     <!--Register-->
-                    <form action="" class="formulario__register">
+                    <form action="" class="formulario__register" id="formRegister">
                       <!-- <div style="margin-left: 400px;" class=" bg-red-300 p-10"> -->
                         <div class=" flex justify-center">
                               <img src="./assets/images/bg9.jpg" alt="Legion" class=" mr-14">
@@ -93,7 +93,7 @@
                         <h2>Regístrarse</h2>
                         <input type="text" placeholder="Nombres">
                         <input type="text" placeholder="Apellidos">
-                        <input type="text" placeholder="Correo Electronico">
+                        <input id="email" type="text" placeholder="Correo Electronico">
                         <br>
                         <br>
                         <p class="gris">Ciclo</p>
@@ -108,15 +108,12 @@
                         <option>Ciclo 08</option>
                         <option>Ciclo 09</option>
                         <option>Ciclo 10</option>
-                        
-
-
-                            
+                                       
                         </select>
                         <input type="text" placeholder="Usuario">
                         <input type="password" placeholder="Contraseña">
                         <input type="text" placeholder="Numero celular">
-                        <button>Regístrarse</button>
+                        <button id="registrarse" >Regístrarse</button>
                     </form>
                 </div>
             </div>
@@ -257,7 +254,7 @@
                   Lima:
                   <span class=" font-medium underline underline-offset-2 hover:cursor-pointer">
                     (01) 315 9600
-                  </span text-white>
+                  </span>
                   | Provincia:
                   <span class=" font-medium underline underline-offset-2 hover:cursor-pointer">
                     0801 19 600
@@ -554,4 +551,5 @@
         <!-- </div> -->
         <script src="assets/js/script.js"></script>
 </body>
+<script src="assets/js/one.js"></script>
 </html>
